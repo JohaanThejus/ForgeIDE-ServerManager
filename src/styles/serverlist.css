@@ -1,0 +1,20 @@
+.list-container {
+    height: calc(100% - 20px);
+    width: 40%;
+    background-color: rgb(29, 29, 29);
+    margin: 10px;
+    border-radius: 8px;
+}
+.new-server {
+    height: 25px;
+    width: calc(100% - 10px);
+    margin: 5px;
+    background-color: rgb(50, 50, 50);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: white;
+    font-family: Consolas, monospace;
+    user-select: auto;
+    pointer-events: all;
+}

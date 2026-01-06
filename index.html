@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      html,
+      body,
+      #root {
+        margin: 0;
+        width: 100%;
+      }
+      #titlebar {
+        -webkit-app-region: drag;
+        height: 30px;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #000000;
+      }
+      #root {
+        box-sizing: border-box;
+        height: calc(100% - 30px);
+        position: absolute;
+        top: 30px;
+        background-color: #131313;
+      }
+      #status {
+        height: 15px;
+        width: 15px;
+        background-color: #ff1212ef;
+        border-radius: 50%;
+        display: block;
+        margin: 7.5px;
+        position: absolute;
+        top: 0;
+        right: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="titlebar">
+      <span id="status"></span>
+    </div>
+    <div id="root">
+
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script type="module" src="/script/handler.js"></script>
+  </body>
+</html>
