@@ -1,20 +1,32 @@
 .list-container {
-    height: calc(100% - 20px);
-    width: 40%;
-    background-color: rgb(29, 29, 29);
+    height: calc(100% - 30px);
+    width: calc(100% - 30px);
+    background-color: #1d1d1d;
     margin: 10px;
     border-radius: 8px;
+    padding: 5px;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
-.new-server {
-    height: 25px;
-    width: calc(100% - 10px);
-    margin: 5px;
-    background-color: rgb(50, 50, 50);
-    border: none;
-    outline: none;
-    border-radius: 5px;
-    color: white;
-    font-family: Consolas, monospace;
-    user-select: auto;
-    pointer-events: all;
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
 }
+
+/* track (background) */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* draggable thumb */
+::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 0px;
+}
+
+/* hover state */
+::-webkit-scrollbar-thumb:hover {
+  background: #666;
+}
+

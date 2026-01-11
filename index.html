@@ -9,40 +9,48 @@
       body,
       #root {
         margin: 0;
-        width: 100%;
+        width: 100vw;
+        height: 100vh;
       }
       #titlebar {
         -webkit-app-region: drag;
-        height: 30px;
+        height: 25px;
         width: 100%;
         position: fixed;
         top: 0;
         left: 0;
-        background-color: #000000;
+        background-color: #0e0e0e;
       }
       #root {
         box-sizing: border-box;
-        height: calc(100% - 30px);
+        height: calc(100% - 25px);
         position: absolute;
-        top: 30px;
+        top: 25px;
         background-color: #131313;
       }
       #status {
-        height: 15px;
-        width: 15px;
+        height: 12px;
+        width: 12px;
         background-color: #ff1212ef;
         border-radius: 50%;
         display: block;
-        margin: 7.5px;
+        margin: 6px;
         position: absolute;
         top: 0;
         right: 5px;
+      }
+      #title {
+        color: rgba(255, 255, 255, 0.788);
+        font-family: Consolas, monospace;
+        font-size: 14px;
+        margin: 4px 0 0 10px;
       }
     </style>
   </head>
 
   <body>
     <div id="titlebar">
+      <p id="title">Control Panel</p>
       <span id="status"></span>
     </div>
     <div id="root">

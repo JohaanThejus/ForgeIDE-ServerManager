@@ -1,7 +1,9 @@
 interface Server {
     name: string;
     ip: string;
-    status: "online" | "offline";
+    connected?: boolean;
+    id: string;
+    
 }
 
 export type {

@@ -13,10 +13,11 @@
     "windows": [
       {
         "title": "forge",
-        "width": 800,
+        "width": 350,
         "height": 500,
         "decorations": false,
-        "maximizable": false
+        "maximizable": false,
+        "shadow": false
       }
     ],
     "security": {
